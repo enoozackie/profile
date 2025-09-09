@@ -1,8 +1,13 @@
 <?php
 require __DIR__ . "/../vendor/autoload.php";
-
 use Lourdian\BasicStudent\Model\User;
 
+// Prevent browser caching to block Back button after logout
+header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+header("Cache-Control: post-check=0, pre-check=0", false);
+header("Pragma: no-cache");
+
+// Start session and check login
 session_start();
 if (!isset($_SESSION['user_id'])) {
     header("Location: login.php");
