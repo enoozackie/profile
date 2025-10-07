@@ -1,0 +1,15 @@
+{
+    "name": "lourdian/basic-student",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Lourdian\\BasicStudent\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "lourdian"
+        }
+    ],
+    "require": {}
+}
